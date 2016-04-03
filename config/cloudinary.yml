@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hangle
+  api_key: '146453633181599'
+  api_secret: LtINCSakNYT1E7spwJsprAcP29s
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hangle
+  api_key: '146453633181599'
+  api_secret: LtINCSakNYT1E7spwJsprAcP29s
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hangle
+  api_key: '146453633181599'
+  api_secret: LtINCSakNYT1E7spwJsprAcP29s
+  enhance_image_tag: true
+  static_image_support: false
