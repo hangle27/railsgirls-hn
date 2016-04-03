@@ -28,15 +28,7 @@ class IdeasController < ApplicationController
   def create
     @idea = Idea.new(idea_params)
 
-    respond_to do |format|
-      if @idea.save
-        format.html { redirect_to @idea, notice: 'Idea was successfully created.' }
-        format.json { render :show, status: :created, location: @idea }
-      else
-        format.html { render :new }
-        format.json { render json: @idea.errors, status: :unprocessable_entity }
-      end
-    end
+    params.require(:idea).permit(:name, :description, :picture, :user_id)
   end
 
   # PATCH/PUT /ideas/1
